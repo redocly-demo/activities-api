@@ -1,8 +1,8 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Activities API
-  description: Activities API
+  title: Activities
+  description: Activities.
   termsOfService: "https://example.com/terms/"
   license:
     name: Apache 2.0
@@ -63,7 +63,7 @@ paths:
                     - timestamp
       responses:
         "204":
-          description: Activity was successfully submitted.
+          description: Activity was successfully created.
         "400":
           description: Bad request.
           content:
