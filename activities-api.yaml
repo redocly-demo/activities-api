@@ -3,17 +3,18 @@ info:
   version: 1.0.0
   title: Activities
   description: Activities.
-  termsOfService: "https://example.com/terms/"
+  termsOfService: 'https://example.com/terms/'
   license:
     name: Apache 2.0
-    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 tags:
   - name: Activities
     description: Activities operations.
 servers:
-  - url: https://api.impossiblemissionsforce.com
+  - url: https://api.impossiblemissionsforce.com/activities
+    description: Production server
 paths:
-  /activities:
+  /:
     post:
       summary: Create a new activity
       operationId: postActivities
@@ -56,15 +57,15 @@ paths:
                     timestamp:
                       type: string
                       format: date-time
-                      example: "2023-02-19T09:31:27Z"
+                      example: '2023-02-19T09:31:27Z'
                       description: Timestamp when the activity was created.
                   required:
                     - user
                     - timestamp
       responses:
-        "204":
+        '204':
           description: Activity was successfully created.
-        "400":
+        '400':
           description: Bad request.
           content:
             application/problem+json:
