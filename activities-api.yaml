@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   version: 1.0.0
   title: Activities
-  description: All about Activities.
+  description: All about Activities and Adam.
   termsOfService: 'https://example.com/terms/'
   license:
     name: Apache 2.0
