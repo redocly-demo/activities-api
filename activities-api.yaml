@@ -16,7 +16,7 @@ servers:
 paths:
   /:
     post:
-      summary: Create a new activity
+      summary: Create a new activity by Adam
       operationId: postActivities
       requestBody:
         required: true
